@@ -1,0 +1,1 @@
+alert('enter ok if u like it')
