@@ -33,6 +33,7 @@ body {
     min-height: 30px;
     max-height: 180px;
     display: block;
+    margin: 10px 0 10px 0;
 }
 
 .input {
@@ -46,4 +47,5 @@ body {
 
 .button {
     cursor: pointer;
+    margin: 4px 0 10px 0;
 }
