@@ -25,6 +25,10 @@ p {
   margin: 0;
 }
 
+a, button {
+  outline: none;
+}
+
 .container {
   max-width: 1250px;
   margin: 0 auto;
@@ -49,11 +53,20 @@ p {
   text-align: center;
   color: #fff;
   background-color: #3596ed;
-  transition: opacity 0.2;
+  transition: opacity 0.2, background-color 0.2s;
 }
 
 .button:hover {
   opacity: 0.85;
+}
+
+.button:not(:disabled):active {
+  background-color: #1e5382;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: default;
 }
 
 .section {
@@ -63,9 +76,18 @@ p {
 .title-large {
   max-width: 596px;
   margin-bottom: 40px;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 600;
   font-size: 48px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+.title-med {
+  font-family: Oswald, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
   line-height: 115%;
   text-transform: uppercase;
   color: #2c332f;
@@ -77,4 +99,9 @@ p {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #858e8a;
+}
+
+a:focus-visible, button:focus-visible, summary:focus-visible {
+  outline: 2px solid #3596ed;
+  outline-offset: 1px;
 }
