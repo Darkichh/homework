@@ -5,19 +5,19 @@
     text-align: center;
 }
 
-.footer-top {
+.footer__top {
     border-bottom: 1px solid #d3cbd9;
     padding-bottom: 40px;
     margin-bottom: 40px;
 }
 
-.footer-logo {
+.footer__logo {
     display: inline-block;
     margin-bottom: 40px;
 
 }
 
-.menu ul {
+.footer__menu ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@
     padding: 0;
 }
 
-.menu a {
+.footer__menu a {
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
@@ -36,11 +36,11 @@
     transition: color 0.2s;
 }
 
-.menu a:hover {
+.footer__menu a:hover {
     color: #3596ed;
 }
 
-.copyright {
+.footer__copyright {
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.04em;
@@ -57,7 +57,7 @@
 */
 
 @media (width <= 768px) {
-    .menu ul {
+    .footer__menu ul {
         flex-direction: column;
         gap: 25px;
     }

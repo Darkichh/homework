@@ -20,29 +20,34 @@
 	<body>
 		<header class="header">
 			<div class="container">
-				<div class="header-inner">
-					<a href="/">
+				<div class="header__inner">
+					<a class="header__logo" href="/">
 						<img src="./images/logo.svg" width="84" height="45" alt="Логотип" />
 					</a>
-					<div class="phone text-sub">
-						<p>Первое посещение бесплатно</p>
-						<a href="tel:+79282822882">+7 (928) 282-28-82</a>
+					<div class="header__phone text-sub">
+						<p class="header__phone-text">Первое посещение бесплатно</p>
+						<a class="header__phone-link" href="tel:+79282822882"
+							>+7 (928) 282-28-82</a
+						>
 					</div>
 				</div>
 			</div>
 		</header>
 		<section class="hero section decor">
-			<div class="container hero-container">
-				<div class="hero-info">
-					<h1>Подтянутое тело <strong>за месяц</strong> тренировок</h1>
-					<p class="text">
+			<div class="container hero__container">
+				<div class="hero__info">
+					<h1 class="hero__title">
+						Подтянутое тело
+						<strong class="hero__title-accent">за месяц</strong> тренировок
+					</h1>
+					<p class="hero__text text">
 						Программа тренировки включает в себя разнообразные упражнения,
 						направленные на развитие силы и мышечного тонуса.
 					</p>
-					<a href="#" class="button">Посмотреть программу</a>
+					<a href="#" class="hero__link button">Посмотреть программу</a>
 				</div>
-				<div class="hero-images">
-					<p class="hero-choose text">Выбери своего тренера</p>
+				<div class="hero__images">
+					<p class="hero__choose text">Выбери своего тренера</p>
 					<img
 						src="./images/sport-woman-img.jpg"
 						width="347"
@@ -60,9 +65,9 @@
 		</section>
 		<section class="news section">
 			<div class="container">
-				<h2 class="title-large">Последние новости</h2>
-				<div class="news-container">
-					<article class="news-article">
+				<h2 class="news__title title-large">Последние новости</h2>
+				<div class="news__container">
+					<article class="news__article">
 						<header>
 							<img
 								src="./images/news/Frame 5.jpg"
@@ -70,18 +75,18 @@
 								height="204"
 								alt="Велотренажеры в спорт зале"
 							/>
-							<div class="news-info">
-								<time class="news-date text-sub" datetime="2024-04-19"
+							<div class="news__info">
+								<time class="news__date text-sub" datetime="2024-04-19"
 									>19.04.2024</time
 								>
 								<h3 class="text">Открытие нового филиала в центре города!</h3>
 							</div>
 						</header>
 						<footer>
-							<a class="news-link" href="article.html">Подробнее</a>
+							<a class="news__link" href="article.html">Подробнее</a>
 						</footer>
 					</article>
-					<article class="news-article">
+					<article class="news__article">
 						<header>
 							<img
 								src="./images/news/Frame 6.jpg"
@@ -89,8 +94,8 @@
 								height="204"
 								alt="Занятие в зале"
 							/>
-							<div class="news-info">
-								<time class="news-date text-sub" datetime="2024-04-17"
+							<div class="news__info">
+								<time class="news__date text-sub" datetime="2024-04-17"
 									>17.04.2024</time
 								>
 								<h3 class="text">
@@ -99,10 +104,10 @@
 							</div>
 						</header>
 						<footer>
-							<a class="news-link" href="#">Подробнее</a>
+							<a class="news__link" href="#">Подробнее</a>
 						</footer>
 					</article>
-					<article class="news-article">
+					<article class="news__article">
 						<header>
 							<img
 								src="./images/news/Frame 7.jpg"
@@ -110,7 +115,7 @@
 								height="204"
 								alt="Девушки занимаются на велотренажерах"
 							/>
-							<div class="news-info">
+							<div class="news__info">
 								<time class="news-date text-sub" datetime="2024-04-13"
 									>13.04.2024</time
 								>
@@ -120,10 +125,10 @@
 							</div>
 						</header>
 						<footer>
-							<a class="news-link" href="#">Подробнее</a>
+							<a class="news__link" href="#">Подробнее</a>
 						</footer>
 					</article>
-					<article class="news-article">
+					<article class="news__article">
 						<header>
 							<img
 								src="./images/news/Frame 8.jpg"
@@ -131,15 +136,15 @@
 								height="204"
 								alt="Девушка на велодорожке"
 							/>
-							<div class="news-info">
-								<time class="news-date text-sub" datetime="2024-04-08"
+							<div class="news__info">
+								<time class="news__date text-sub" datetime="2024-04-08"
 									>08.04.2024</time
 								>
 								<h3 class="text">Открыт конкурс на лучший фитнес-челлендж</h3>
 							</div>
 						</header>
 						<footer>
-							<a class="news-link" href="#">Подробнее</a>
+							<a class="news__link" href="#">Подробнее</a>
 						</footer>
 					</article>
 				</div>
@@ -147,8 +152,8 @@
 		</section>
 		<section class="faq section decor">
 			<div class="container">
-				<h2 class="title-large">Вопросы и ответы</h2>
-				<div class="faq-container">
+				<h2 class="faq__title title-large">Вопросы и ответы</h2>
+				<div class="faq__container">
 					<img
 						src="./images/sport-woman2-img.jpg"
 						alt="Спортивная женщина"
@@ -157,7 +162,7 @@
 					/>
 					<div>
 						<details name="faq" open>
-							<summary class="title-med">
+							<summary class="faq__question title-med">
 								Какие способы оплаты вы принимаете?
 							</summary>
 							<p class="text">
@@ -168,7 +173,9 @@
 							</p>
 						</details>
 						<details name="faq">
-							<summary class="title-med">Какие абонементы у вас есть?</summary>
+							<summary class="faq__question title-med">
+								Какие абонементы у вас есть?
+							</summary>
 							<p class="text">
 								Наш сайт подключен к интернет-эквайрингу, и вы можете оплатить
 								товар или услугу банковской картой Visa, MasterCard, Maestro и
@@ -177,7 +184,7 @@
 							</p>
 						</details>
 						<details name="faq">
-							<summary class="title-med">
+							<summary class="faq__question title-med">
 								Есть ли у вас рассрочка на абонементы?
 							</summary>
 							<p class="text">
@@ -188,7 +195,7 @@
 							</p>
 						</details>
 						<details name="faq">
-							<summary class="title-med">
+							<summary class="faq__question title-med">
 								Есть ли у вас бонусы для постоянных клиентов?
 							</summary>
 							<p class="text">
@@ -199,7 +206,7 @@
 							</p>
 						</details>
 						<details name="faq">
-							<summary class="title-med">
+							<summary class="faq__question title-med">
 								Возможно ли переоформить мою клубную карту на другого человека?
 							</summary>
 							<p class="text">
@@ -214,12 +221,12 @@
 			</div>
 		</section>
 		<footer class="footer">
-			<div class="footer-top">
+			<div class="footer__top">
 				<div class="container">
-					<a class="footer-logo" href="/">
+					<a class="footer__logo" href="/">
 						<img src="./images/logo.svg" width="84" height="45" alt="Логотип" />
 					</a>
-					<nav class="menu">
+					<nav class="footer__menu">
 						<ul>
 							<li><a href="#">Клубы</a></li>
 							<li><a href="#">Тренировки</a></li>
@@ -231,7 +238,7 @@
 				</div>
 			</div>
 			<div class="container">
-				<p class="copyright">&copy; Copyright. Все права защищены</p>
+				<p class="footer__copyright">&copy; Copyright. Все права защищены</p>
 			</div>
 		</footer>
 	</body>
