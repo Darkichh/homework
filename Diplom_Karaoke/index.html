@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Караоке-клуб</title>
+		<link rel="stylesheet" href="./css/index.css" />
+	</head>
+	<body class="page__body">
+		<div class="container">
+			<header class="header">
+				<div class="container header__container">
+					<a class="logo header__logo" href="#">
+						<img
+							src="./icons/karaoke_logo_icon.svg"
+							alt="логотип караоке клуба"
+							width="293"
+							height="67"
+						/>
+					</a>
+					<div class="header__phone">
+						<a class="header__phone-text" href="tel:+38(097)970-90-90"
+							>+38 (097) 970-90-90</a
+						>
+					</div>
+					<div class="header__address">
+						<a class="header__address-link" href="#map-modal">м. Лубянка</a>
+					</div>
+					<div class="modal" id="map-modal">
+						<a class="modal__overlay" href="#"></a>
+						<div class="modal__content">
+							<div class="modal__map">
+								<iframe
+									src="https://yandex.ru/map-widget/v1/?um=constructor%3A5a5dd5bcf294a270b62ab6d7adf3fe5fc4174037622e57b5638abf9faa751a98&amp;source=constructor"
+									width="614"
+									height="400"
+									frameborder="0"
+								></iframe>
+							</div>
+						</div>
+					</div>
+					<div class="header__link">
+						<a class="header__link-text" href="#">Наши залы</a>
+					</div>
+					<div class="header__form">
+						<a class="header__form-text" href="#form-modal">Забронировать</a>
+					</div>
+					<div class="modal" id="form-modal">
+						<a class="modal__overlay" href="#"></a>
+						<div class="modal__content">
+							<form class="modal__form">
+								<fieldset class="modal__form-group">
+									<label class="modal__form-phone"
+										><input
+											type="tel"
+											placeholder="Номер телефона"
+											name="number"
+											required
+											class="modal__input"
+									/></label>
+									<button class="modal__form-button">Отправить</button>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+	</body>
+</html>
