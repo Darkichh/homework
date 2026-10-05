@@ -1,0 +1,226 @@
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hero__container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 25px;
+    z-index: var(--layer-2);
+}
+
+.hero__content {
+    position: relative;
+    z-index: var(--layer-3);
+}
+
+.hero__title {
+    font-weight: 400;
+    font-size: 41px;
+    line-height: 200%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+.hero__title-2 {
+    max-width: 876px;
+    font-weight: 900;
+    font-size: 75px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color);
+    padding-bottom: 70px;
+}
+
+.hero__title-2::after {
+    content: "м. Лубянка";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    color: var(--main-color);
+    background-color: #343a3e;
+    padding: 6px 14px;
+    border-radius: 60px;
+    transform: translateY(-5px);
+}
+
+.hero__benefits-list {
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding-bottom: 76px;
+}
+
+.hero__list-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    max-width: 242px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+}
+
+.hero__list-item::before {
+    display: inline-block;
+    flex-shrink: 0;
+    content: "";
+    width: 46px;
+    height: 46px;
+    background-image: url("../../icons/Check_icon.svg");
+}
+
+.hero__button {
+    border-radius: 60px;
+    width: 277px;
+    height: 70px;
+    background: linear-gradient(93.25deg, #ea422a 0%, #f69020 48.83%, #ffc619 101.91%);
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #252121;
+    margin-bottom: 125px;
+}
+
+.hero__bonuses-list {
+    width: min(100vw, 1920px);
+    margin: 0 0 0 calc((100vw - min(100vw, 1920px)) / 2 - 25px);
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 480px));
+    grid-template-rows: 130px;
+    position: relative;
+}
+
+.hero__bonus-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 26px;
+    gap: 16px;
+}
+
+.hero__bonus-item:nth-child(odd) {
+    background-color: #282b32;
+}
+
+.hero__bonus-item:nth-child(even) {
+    background-color: #202124;
+}
+
+.hero__bonus-icon {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.hero__bonus-icon::after {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    content: "";
+    width: 34px;
+    height: 1px;
+    margin-left: 25px;
+    margin-right: 37px;
+    background-color: #FFC619;
+    opacity: 0.3;
+}
+
+.hero__bonus-text {
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.03em;
+color: var(--main-color);
+}
+
+.hero__visuals {
+    position: absolute;
+    inset: 0;
+    z-index: var(--layer-2);
+    pointer-events: none;
+}
+
+.hero__girl {
+    position: absolute;
+    right: 221px;
+    bottom: 260px;
+    height: 90%; 
+}
+
+.hero__img {
+    position: absolute;
+    top: 190px;
+    right: 620px; 
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__birka {
+    display: block;
+}
+
+.hero__img-text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    pointer-events: none; 
+}
+
+.hero__img-subtitle {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.hero__img-title {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 86%;
+    margin-top: 4px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    background: linear-gradient(180deg, #ffc619 0%, #f69020 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero__background {
+    position: absolute;
+    top: -55px;
+    right: 0;
+    width: 58%;
+    height: 100%;
+    box-shadow: inset -31px 0 121px 120px #191b20;
+    pointer-events: none;
+}
+
